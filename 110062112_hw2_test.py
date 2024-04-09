@@ -115,7 +115,7 @@ class Agent(object):
             H=84,
             W=84
         )
-        path = "./model_best_5089.0.pth"
+        path = ".110062112_hw2_data"
         self.model.load_state_dict(torch.load(path))
         self.model.eval()
 

@@ -116,7 +116,7 @@ class Agent(object):
             W=84
         )
         path = "./110062112_hw2_data"
-        self.model.load_state_dict(torch.load(path))
+        self.model.load_state_dict(torch.load(path, map_location=torch.device('cpu')))
         self.model.eval()
 
         # Get initial state
